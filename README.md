@@ -22,4 +22,10 @@ The existence of these unbalanced IFs demonstrates the likelihood of timing atta
 ## How did we examine the possibility of mounting timing SCA against GC frameworks?
 To examine this, SC-Eliminator [1] is applied against TinyGarble [2], JustGarble [3], EMP-toolkit [4], Obliv-C [5], and ABY [6], and here is the leaky IF reports:
 Table
-## 
+# References:
+1. Ebrahim M. Songhori, Siam U. Hussain, Ahmad-Reza Sadeghi, Thomas Schneider and Farinaz Koushanfar, "TinyGarble: Highly Compressed and Scalable Sequential Garbled Circuits." Security and Privacy, 2015 IEEE Symposium on May, 2015.
+1. Bellare, Mihir, et al. "Efficient garbling from a fixed-key blockcipher." 2013 IEEE Symposium on Security and Privacy. IEEE, 2013.
+1. Malozemoff, A., Wang, X., Katz, J.: Emp-toolkit framework. [Online]https://
+github.com/emp-toolkit [Accessed Jan.30, 2023] (2022).
+1. Zahur, Samee, and David Evans. "Obliv-C: A language for extensible data-oblivious computation." Cryptology ePrint Archive (2015).
+1. Demmler, Daniel, Thomas Schneider, and Michael Zohner. "ABY-A framework for efficient mixed-protocol secure two-party computation." NDSS. 2015.
