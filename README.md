@@ -5,4 +5,7 @@ For more information, please refer to [Time is money, friend! Timing Side-channe
 Goblin is the first non-profiling, single-trace timing SCA that successfully extracts the user’s input, which, by definition, should have been kept secret.
 ## How easy is it to use Goblin, and how scalable is Goblin?
 Goblin is machine-learning assisted in disclosing the garbler’s input, regardless of size. For this purpose, k-means clustering is applied, where no manual tuning or heuristic leakage models are needed. It is, of course, advantageous to the attacker and allows for scalable and efficient attacks.
-
+## Which garbled circuit optimizations are vulnerable to Goblin?
+The free-XOR- and half-gates-optimized constructions are vulnerable to Goblin attack.
+## Why free-XOR- and half-gates-optimized constructions are vaulnarable to Goblin?
+The existence of these unbalanced IFs demonstrates the likelihood of timing attacks to be successfully mounted against them.
