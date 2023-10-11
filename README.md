@@ -23,6 +23,8 @@ The existence of these unbalanced IFs demonstrates the likelihood of timing atta
 To examine this, SC-Eliminator [1] is applied against TinyGarble [2], JustGarble [3], EMP-toolkit [4], Obliv-C [5], and ABY [6], and here is the leaky IF reports:
 Table
 # References:
+1. Wu, M., Guo, S., Schaumont, P., Wang, C.: Eliminating timing side-channel leaks using program repair. In: Proceedings of the 27th ACM SIGSOFT International
+Symposium on Software Testing and Analysis. pp. 15–26 (2018).
 1. Ebrahim M. Songhori, Siam U. Hussain, Ahmad-Reza Sadeghi, Thomas Schneider and Farinaz Koushanfar, "TinyGarble: Highly Compressed and Scalable Sequential Garbled Circuits." Security and Privacy, 2015 IEEE Symposium on May, 2015.
 1. Bellare, Mihir, et al. "Efficient garbling from a fixed-key blockcipher." 2013 IEEE Symposium on Security and Privacy. IEEE, 2013.
 1. Malozemoff, A., Wang, X., Katz, J.: Emp-toolkit framework. [Online]https://
