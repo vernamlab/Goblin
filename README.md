@@ -28,6 +28,7 @@ The existence of these unbalanced IFs demonstrates the likelihood of timing atta
 To examine this, SC-Eliminator [1] is applied against TinyGarble [2], JustGarble [3], EMP-toolkit [4], Obliv-C [5], and ABY [6], and here is the leaky IF reports:
 
 <p align="center">
+  
 |          Framework         | IF |
 |:--------------------------:|:--:|
 | TinyGarble [2] (half-gate) |  4 |
@@ -36,6 +37,7 @@ To examine this, SC-Eliminator [1] is applied against TinyGarble [2], JustGarble
 |       EMP-toolkit [4]      |  0 |
 |         Obliv-c [5]        |  4 |
 |           ABY [6]          |  0 |
+
 </p>
 
 # References:
