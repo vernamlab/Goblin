@@ -27,7 +27,7 @@ The existence of these unbalanced IFs demonstrates the likelihood of timing atta
 ## How did we examine the possibility of mounting timing SCA against GC frameworks?
 To examine this, SC-Eliminator [1] is applied against TinyGarble [2], JustGarble [3], EMP-toolkit [4], Obliv-C [5], and ABY [6], and here is the leaky IF reports:
 
-<div align="center">
+<p align="center">
 |          Framework         | IF |
 |:--------------------------:|:--:|
 | TinyGarble [2] (half-gate) |  4 |
@@ -36,7 +36,7 @@ To examine this, SC-Eliminator [1] is applied against TinyGarble [2], JustGarble
 |       EMP-toolkit [4]      |  0 |
 |         Obliv-c [5]        |  4 |
 |           ABY [6]          |  0 |
-</div>
+</p>
 
 # References:
 1. Wu, M., Guo, S., Schaumont, P., Wang, C.: Eliminating timing side-channel leaks using program repair. In: Proceedings of the 27th ACM SIGSOFT International
