@@ -1,10 +1,11 @@
 # Goblin
+With the advent of secure function evaluation (SFE), distrustful parties can jointly compute on their private inputs without disclosing anything besides the results. Yao's garbled circuit protocol has become an integral part of secure computation thanks to considerable efforts made to make it feasible, practical, and more efficient. For decades, the security of protocols offered in general-purpose compilers has been assured with regard to sound proofs and the promise that during the computation, no information on parties' input would be leaking. In a parallel effort, nevertheless, the vulnerability of garbled circuit frameworks to timing attacks has, surprisingly, never been discussed in the literature. This paper introduces Goblin, the first timing attack against commonly employed garbled circuit frameworks. Goblin is a machine learning-assisted, non-profiling, single-trace timing SCA, which successfully recovers the garbler's input during the computation under different scenarios, including various GC frameworks, benchmark functions, and the number of garbler's input bits. In doing so, Goblin hopefully paves the way for further research in this matter. 
+For more information, please refer to [Time is money, friend! Timing Side-channel Attack against Garbled Circuit Constructions](https://eprint.iacr.org/2023/001.pdf).
+
 <p align="center">
 <img src="https://github.com/vernamlab/Goblin/blob/Website/noun-goblin-5218422-007435.png" alt="drawing" width="400"/>
 </p>
 
-With the advent of secure function evaluation (SFE), distrustful parties can jointly compute on their private inputs without disclosing anything besides the results. Yao's garbled circuit protocol has become an integral part of secure computation thanks to considerable efforts made to make it feasible, practical, and more efficient. For decades, the security of protocols offered in general-purpose compilers has been assured with regard to sound proofs and the promise that during the computation, no information on parties' input would be leaking. In a parallel effort, nevertheless, the vulnerability of garbled circuit frameworks to timing attacks has, surprisingly, never been discussed in the literature. This paper introduces Goblin, the first timing attack against commonly employed garbled circuit frameworks. Goblin is a machine learning-assisted, non-profiling, single-trace timing SCA, which successfully recovers the garbler's input during the computation under different scenarios, including various GC frameworks, benchmark functions, and the number of garbler's input bits. In doing so, Goblin hopefully paves the way for further research in this matter. 
-For more information, please refer to [Time is money, friend! Timing Side-channel Attack against Garbled Circuit Constructions](https://eprint.iacr.org/2023/001.pdf).
 ```
 @article{hashemi2023time,
   title={Time is money, friend! Timing Side-channel Attack against Garbled Circuit Constructions},
@@ -25,6 +26,7 @@ The free-XOR- and half-gates-optimized constructions are vulnerable to Goblin at
 The existence of these unbalanced IFs demonstrates the likelihood of timing attacks to be successfully mounted against them.
 ## How did we examine the possibility of mounting timing SCA against GC frameworks?
 To examine this, SC-Eliminator [1] is applied against TinyGarble [2], JustGarble [3], EMP-toolkit [4], Obliv-C [5], and ABY [6], and here is the leaky IF reports:
+
 <div align="center">
 |          Framework         | IF |
 |:--------------------------:|:--:|
@@ -35,6 +37,7 @@ To examine this, SC-Eliminator [1] is applied against TinyGarble [2], JustGarble
 |         Obliv-c [5]        |  4 |
 |           ABY [6]          |  0 |
 </div>
+
 # References:
 1. Wu, M., Guo, S., Schaumont, P., Wang, C.: Eliminating timing side-channel leaks using program repair. In: Proceedings of the 27th ACM SIGSOFT International
 Symposium on Software Testing and Analysis. pp. 15–26 (2018).
